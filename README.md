@@ -16,10 +16,11 @@
     git clone https://github.com/SimpleVM/TeachV-Workshop.git
     ```
 
-6. Download data needed for the workshop to the volume. We will later clone the volume.
+6. Go to the volume path, adjust the ownership of the directories on the volume and download data needed for the workshop to the volume. We will later clone the volume.
 
     ```
     cd /vol/data
+    sudo chown -R ubuntu:ubuntu .
     wget https://openstack.cebitec.uni-bielefeld.de:8080/workshopteach/world_population.csv
     ```
 7. Stop the virtual machine, detach the volume and create a snapshot of the virtual machine.
