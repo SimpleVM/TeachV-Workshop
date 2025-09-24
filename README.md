@@ -13,7 +13,7 @@
 
 5. Clone the scripts one will adjust and execute during the workshop.
     ```
-    git clone git@github.com:SimpleVM/TeachV-Workshop.git
+    git clone https://github.com/SimpleVM/TeachV-Workshop.git
     ```
 
 6. Download data needed for the workshop to the volume. We will later clone the volume.
