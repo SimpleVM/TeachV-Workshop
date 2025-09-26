@@ -11,8 +11,7 @@ This example outlines the preparation and execution of a hands-on data science w
 
 When organizing practical workshops, especially in computational fields, ensuring that all participants have access to the required tools and data can be a major challenge. Local environment discrepancies, missing software, and compatibility issues often lead to time-consuming troubleshooting. By preparing cloud-based VM templates in advance—with all software, scripts, and datasets pre-installed—organizers can provide each participant with an isolated, identical development environment launched with a single click.
 
-
-OpenStack platforms or similar cloud orchestration tools can streamline this process, providing self-service access to these environments. This approach is particularly valuable in educational, hackathon, or training settings where efficiency and consistency are essential.
+While this repository describes all necessary steps for the conduction of the example use-case given, one can get more detailed instructions and technical informations in the [SimpleVM Wiki](https://simplevm.denbi.de/wiki)
 
 ### Step-by-Step Instruction
 
@@ -136,3 +135,4 @@ With the environment prepared and captured, proceed to define participant instan
 4. **View the Results**
 
    After successful execution, you will find the two PNG images in your current directory. These visualizations display population changes and annotate each bar with population numbers for 2020 and 2022.
+
