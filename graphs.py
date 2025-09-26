@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # === Config ===
+#### TODO: Adjust the path to full path, where the csv-file holding the data is located.
 CSV_PATH = "ADJUST_PATH"
 
 # === Read CSV ===
