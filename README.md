@@ -5,12 +5,12 @@
 
 This example outlines the preparation and execution of a hands-on data science workshop using cloud-based virtual machines (VMs) to provide a consistent, ready-to-use computing environment for all participants. The focus is on reproducibility, convenience, and minimizing setup time for workshop attendees. The steps below use the Visual Studio Code’s Research Environment in SimpleVM as a base image and demonstrate how to pre-install required software and stage workshop data.
 
-
 ## Workshop Preparation
 
 ### Background
 
 When organizing practical workshops, especially in computational fields, ensuring that all participants have access to the required tools and data can be a major challenge. Local environment discrepancies, missing software, and compatibility issues often lead to time-consuming troubleshooting. By preparing cloud-based VM templates in advance—with all software, scripts, and datasets pre-installed—organizers can provide each participant with an isolated, identical development environment launched with a single click.
+
 
 OpenStack platforms or similar cloud orchestration tools can streamline this process, providing self-service access to these environments. This approach is particularly valuable in educational, hackathon, or training settings where efficiency and consistency are essential.
 
@@ -59,10 +59,11 @@ git clone https://github.com/SimpleVM/TeachV-Workshop.git
 
 #### 6. Data Preparation
 
-Download all required datasets into the attached data volume:
+Download all required datasets into the attached data volume and adjust ownership with `chown` beforehand:
 
 ```bash
 cd /vol/data
+sudo chown -R ubuntu:ubuntu .
 wget https://openstack.cebitec.uni-bielefeld.de:8080/workshopteach/world_population.csv
 ```
 
